@@ -3,20 +3,21 @@
         <title>Climate Change Awareness</title>
         <link rel="stylesheet" href="assets/css/style.css">
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <script src="assets/js/jquery.waypoints.min.js"></script>
         <script src="assets/js/script.js"></script>
     </head>
    <body>
-     <div id="intro-container">
-       <div class="climate-container">
+<!--    <div id="intro-container">
+       <div id="intro-climate-container">
          <div class="climate-title">CLIMATE CHANGE</div>
          <div class="climate-statement" id="statement1">is real.</div>
          <div class="climate-statement" id="statement2">is speeding up.</div>
          <div class="climate-statement" id="statement3">is a problem that demands attention.</div>
        </div>
      </div>
-
+-->
      <div id="title-page-container">
-       <div class="climate-container">
+       <div id="title-page-content">
 
          <a href="index.html"><svg id="climatechange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 661.99 84.94">
 
@@ -48,121 +49,149 @@
            </svg>
          </a>
          <div id="climate-subtitle">a closer look at the facts.</div>
-
-        <div id="arrow-container">
-          <svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 661.99 84.94">
-             <style type="text/css">
-             	.st1{fill:none;stroke:#2D343C;stroke-miterlimit:10;}
-             </style>
-             <symbol  id="scroll" viewBox="-29.3 -15 58.6 30">
-             	<polyline class="st1" points="28.9,14.6 0,-14.3 -28.9,14.6 	"/>
-             </symbol>
-             <use xlink:href="#scroll"  width="58.6" height="30" x="-29.3" y="-15" transform="matrix(1 0 0 -1 306 396.113)" style="overflow:visible;"/>
-            </svg>
-         </div>
        </div>
+       <div><img id="arrow-image" src="assets/img/arrow.png"></div>
      </div>
 
-     <section class="section-container1">
+     <section class="section-container1" id="problem-container">
        <div class="content-container">
-        <div class="section-title">THE PROBLEM</div>
-          <div><img id="carbon-graph" src="assets/img/carbondioxidegraph.png"></div>
-          <div class="blurb" id="blurb1">
+        <div class="section-title" id="problem-title">THE PROBLEM</div>
+          <div><img id="carbon-graph" src="assets/img/carbonhistorygraph.png"></div>
+          <div class="blurb" id="blurb-co2">
           <div class="blurb-title">Carbon dioxide in the atmosphere</div>
-            <div class="blurb-content">Lorem ipsum dolor sit amet, dui nunc,
-              consectetuer rutrum tincidunt. Libero ac. Nunc orci mauris,
-              condimentum velit, rutrum non. Quis facilisis, purus tortor nulla,
-              gravida in. Diam vulputate amet. Sit placerat, iaculis ridiculus.
-              Aliquam sed phasellus, dictum ipsum. Bibendum commodo.
+            <div class="blurb-content">While carbon dioxide is an important gas
+              that traps heat and allows for life on Earth, its concentration in
+              the atmosphere has increased significantly in the past decades. Carbon
+              dioxide is the main contributor to "forcing" climate change.
             </div>
           </div>
         </div>
       </section>
       <section class="section-container2">
         <div class="content-container">
-          <div><img id="world-image" src="assets/img/world.png"></div>
-            <div class="blurb">
-              <div class="blurb-title">Land ice depletion</div>
-                <div class="blurb-content">Lorem ipsum dolor sit amet, dui nunc,
-                  consectetuer rutrum tincidunt. Libero ac. Nunc orci mauris,
-                  condimentum velit, rutrum non. Quis facilisis, purus tortor nulla,
-                  gravida in. Diam vulputate amet. Sit placerat, iaculis ridiculus.
-                  Aliquam sed phasellus, dictum ipsum. Bibendum commodo.
+          <div><img id="world-image" src="assets/img/ozone-hole.png"></div>
+            <div class="blurb" id="blurb-ozone">
+              <div class="blurb-title">The ozone hole</div>
+                <div class="blurb-content">The ozone layer in the
+                  atmosphere protects us from the sun's harmful ultraviolet
+                  rays. Human use of gases like chlorofluorocarbons break down
+                  ozone molecules, forming a hole in the ozone layer over the
+                  South Pole.
               </div>
             </div>
         </div>
       </section>
-      <section class="section-container3">
+      <section class="section-container3" id="temp-container">
         <div class="content-container">
-          <div class="blurb">
-            <div class="blurb-title">Rising global temperature</div>
-              <div class="blurb-content">Lorem ipsum dolor sit amet, dui nunc,
-                consectetuer rutrum tincidunt. Libero ac. Nunc orci mauris,
-                condimentum velit, rutrum non. Quis facilisis, purus tortor nulla,
-                gravida in. Diam vulputate amet. Sit placerat, iaculis ridiculus.
-                Aliquam sed phasellus, dictum ipsum. Bibendum commodo.
+          <div><img id="thermometer-image" src="assets/img/thermometer.png"></div>
+          <div id="thermometer-rectangle"></div>
+            <div id="thermometer-buttons">
+              <div class="temp-button" id="temp-button1">2015</div>
+              <div class="temp-button" id="temp-button2">2000</div>
+              <div class="temp-button" id="temp-button3">1980</div>
+              <div class="temp-button" id="temp-button4">1960</div>
+              <div class="temp-button" id="temp-button5">1940</div>
             </div>
-          </div>
+                <div class="blurb" id="blurb-temp">
+                  <div class="blurb-title">Rising global temperature</div>
+                    <div class="blurb-content">The earth's temperature has increased
+                      at an extremely rapid pace since the 1970s. This has led to warming
+                      oceans, shrinking land ice, glacial retreat, and extreme climate
+                      events.
+                  </div>
+                </div>
         </div>
       </section>
 
 
-      <section class="section-container1">
+      <section class="section-container1" id="causes-container">
         <div class="content-container">
-          <div class="section-title">THE CAUSES</div>
-          <div class="blurb">
-            <div class="blurb-title">Burning fossil fuels</div>
-              <div class="blurb-content">Lorem ipsum dolor sit amet, dui nunc,
-                consectetuer rutrum tincidunt. Libero ac. Nunc orci mauris,
-                condimentum velit, rutrum non. Quis facilisis, purus tortor nulla,
-                gravida in. Diam vulputate amet. Sit placerat, iaculis ridiculus.
-                Aliquam sed phasellus, dictum ipsum. Bibendum commodo.
-              </div>
-              </div>
+          <div class="section-title" id="causes-title">THE CAUSES</div>
+            <div><img id="fossil-image" src="assets/img/burning-fossil-fuels.png"></div>
+              <div class="blurb" id=blurb-fossil>
+                <div class="blurb-title">Burning fossil fuels</div>
+                  <div class="blurb-content">The burning of these non-renewable
+                    resources, including oil, natural gas, and coal, has increased
+                    amount of carbon dioxide in the atmosphere, contributing to
+                    the greenhouse effect.
+                  </div>
+                  </div>
             </div>
           </section>
 
         <section class="section-container2">
           <div class="content-container">
-            <div class="blurb">
-              <div class="blurb-title">Lorem Ipsum Dolor</div>
-                <div class="blurb-content">Lorem ipsum dolor sit amet, dui nunc,
-                  consectetuer rutrum tincidunt. Libero ac. Nunc orci mauris,
-                  condimentum velit, rutrum non. Quis facilisis, purus tortor nulla,
-                  gravida in. Diam vulputate amet. Sit placerat, iaculis ridiculus.
-                  Aliquam sed phasellus, dictum ipsum. Bibendum commodo.
-                </div>
-              </div>
+            <div class="blurb" id="blurb-methane">
+              <div class="blurb-title">Methane in the atmosphere</div>
+                  <div class="blurb-content">Waste in landfills and cultivation of
+                    agriculture and livestock are significant contributors to methane
+                    in the atmosphere. Methane is a greenhouse gas that is
+                    more active than carbon dioxide.
+                  </div>
+            </div>
+                  <div><img id="cow-image" src="assets/img/cow.png"></div>
+                  <div id="cow-quote-container">
+                    <div id="cow-quote">"Animal agriculture makes a 40% greater
+                      contribution to global warming than all transportation in the
+                      world combined; it is the number one cause of climate change."
+                    </div>
+                    <div id="cow-author">--from "Eating Animals" by Jonathan Safran Foer
+                    </div>
+                  </div>
             </div>
           </section>
 
-        <section class="section-container1">
+        <section class="section-container1" id="difference-container">
           <div class="content-container">
-            <div class="section-title">HOW YOU CAN <div>MAKE A DIFFERENCE</div></div>
-              <div class="blurb">
-                <div class="blurb-title">Lorem Ipsum Dolor</div>
-                    <div class="blurb-content">Lorem ipsum dolor sit amet, dui nunc,
-                      consectetuer rutrum tincidunt. Libero ac. Nunc orci mauris,
-                      condimentum velit, rutrum non. Quis facilisis, purus tortor nulla,
-                      gravida in. Diam vulputate amet. Sit placerat, iaculis ridiculus.
-                      Aliquam sed phasellus, dictum ipsum. Bibendum commodo.
-                    </div>
-                </div>
-              </div>
-            </section>
+            <div class="section-title" id="difference-title">HOW YOU CAN <div>MAKE A DIFFERENCE</div></div>
+              <div class="section-subtitle">Even the smallest changes in your daily
+                lifestyle can make a huge impact on the environment.</div>
 
-          <section class="section-container2">
-            <div class="content-container">
-              <div class="blurb">
-                <div class="blurb-title">Lorem Ipsum Dolor</div>
-                  <div class="blurb-content">Lorem ipsum dolor sit amet, dui nunc,
-                    consectetuer rutrum tincidunt. Libero ac. Nunc orci mauris,
-                    condimentum velit, rutrum non. Quis facilisis, purus tortor nulla,
-                    gravida in. Diam vulputate amet. Sit placerat, iaculis ridiculus.
-                    Aliquam sed phasellus, dictum ipsum. Bibendum commodo.
-                  </div>
+                <div id="action-container">
+
+<!--                  <div class="action-box-cover">
+                    <div><img id="recycle-image" src="assets/img/recycle.png>"></div>
+                  </div>-->
+
+                  <div class="action-box" id="action-box1">
+                    <div class="action-title">Reduce, reuse, recycle</div>
+                      <div><img id="recycle-image" src=assets/img/recycle.png></div>
+                        <div class="action-content" id="recycle-content">Use reusable water bottles and
+                          carry around stylish reusable utensils to use on the go.
+                          Use reusable bags for grocery shopping and other errands.
+                        </div>
+                    </div>
+                    <div class="action-box" id="action-box2">
+                      <div class="action-title">Eat wisely</div>
+                        <div><img id="plate-image" src=assets/img/plate.png></div>
+                          <div class="action-content" id="plate-content">Eat organic and locally grown foods,
+                            and cut down on meat consumption. Manure from livestock,
+                            greenhouse gas emissions from fertilizer and pesticides, and
+                            transportation of food shipments have extremely negative
+                            impacts on the environment.
+                          </div>
+                      </div>
+                    <div class="action-box" id="action-box3">
+                      <div class="action-title">Travel green</div>
+                        <div><img id="wheel-image" src=assets/img/wheel.png></div>
+                          <div class="action-content" id="wheel-content">Walk or bike whenever possible.
+                            Take public transportation, carpool, and drive fuel-efficient
+                            vehicles to reduce carbon emissions from transportation.
+                          </div>
+                    </div>
+                    <div class="action-box" id="action-box4">
+                      <div class="action-title">Spread the word</div>
+                        <div><img id="speech-image" src=assets/img/speech.png></div>
+                          <div class="action-content" id="speech-content">Encourage your friends, family,
+                            and colleagues to make green changes to their lifestyle!
+                            Make plans to bike or carpool together, give reusable
+                            containers as gifts, and set a good example for combatting
+                            climate change!
+                          </div>
+                      </div>
+                    </div>
+
                 </div>
-              </div>
             </section>
 
       <section id="last-section-container">
@@ -171,6 +200,12 @@
             <div id="save-earth">Save our Earth.</div>
         </div>
         <div><img id="halfworld-image" src="assets/img/halfworld.png"></div>
+        <div id="citation-container">
+          <div class="creds">Information provided by: NASA's Earth Science and
+          Communications Team</div>
+          <div class="creds">Site produced by: Stephanie Tang</div>
+        </div>
       </section>
+
   </body>
 </html>
