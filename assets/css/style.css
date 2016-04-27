@@ -10,6 +10,7 @@ a {
   text-decoration: none;
 }
 
+/* this is for the CLIMATE CHANGE title page */
 path {
 	stroke-dasharray: 500;
 	stroke-dashoffset: 500;
@@ -17,10 +18,10 @@ path {
   -webkit-animation: dash 5s ease-in-out forwards;
   -moz-animation: dash 5s ease-in-out forwards;
   -ms-animation: dash 5s ease-in-out forwards;
-  animation-delay: 10s;
-  -webkit-animation-delay: 10s;
-  -moz-animation-delay: 10s;
-  -ms-animation-delay: 10s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
   opacity: 0.1;
 }
 
@@ -184,10 +185,10 @@ path {
   -webkit-animation: fadeenter 3s forwards;
   -moz-animation: fadeenter 3s forwards;
   -ms-animation: fadeenter 3s forwards;
-  animation-delay: 13s;
-  -webkit-animation-delay: 13s;
-  -moz-animation-delay: 13s;
-  -ms-animation-delay: 13s;
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -ms-animation-delay: 4s;
   position: absolute;
   top: 45%;
   left: 50%;
@@ -212,14 +213,10 @@ path {
   -webkit-animation: fadeenter 2s forwards;
   -moz-animation: fadeenter 2s forwards;
   -ms-animation: fadeenter 2s forwards;
-  animation-delay: 14s;
-  -webkit-animation-delay: 14s;
-  -moz-animation-delay: 14s;
-  -ms-animation-delay: 14s;
-}
-
-#arrow-image:hover {
-
+  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -ms-animation-delay: 5s;
 }
 
 .section-container1 {
@@ -280,6 +277,8 @@ path {
   font-size: 30px;
   color: #2d343c;
   font-weight: 700;
+  line-height: 30px;
+  padding-bottom: 10px;
 }
 
 .blurb-content {
@@ -321,6 +320,23 @@ path {
   width: 450px;
   left: 500px;
   position: absolute;
+}
+
+#spectrum-image {
+  height: 45px;
+  position: absolute;
+  left: 58%;
+  top: 93%;
+}
+
+#spectrum-label {
+  font-family: "Gotham";
+  font-size: 12px;
+  color:#2d343c;
+  position: absolute;
+  top: 103%;
+  left: 66%;
+  opacity: 0.8;
 }
 
 #thermometer-image {
@@ -369,6 +385,48 @@ path {
 
 #temp-button5 {
   margin-bottom: 10px;
+}
+
+#temp-number-container {
+  width: 600px;
+  position: absolute;
+  top: 70%;
+  left: 32%;
+}
+
+#temp-number-title {
+  font-family: "Majesti Banner";
+  font-size: 30px;
+  color: #2d343c;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.temp-number {
+  color: #b54234;
+  font-family: "Gotham";
+  font-size: 35px;
+  font-weight: 100;
+}
+
+#temp-number1 {
+
+}
+
+#temp-number2 {
+  display: none;
+}
+
+#temp-number3 {
+  display: none;
+}
+
+#temp-number4 {
+  display: none;
+}
+
+#temp-number5 {
+  display: none;
 }
 
 #blurb-temp {
@@ -472,9 +530,6 @@ path {
 .action-box {
   width: 200px;
   height: 280px;
-  /* border-width: 1.5px; */
-  /* border-style: solid; */
-  /* border-color: #2d343c; */
   display: inline-block;
   margin: 5px;
   padding: 10px;
@@ -491,7 +546,6 @@ path {
 
 #recycle-image {
   width: 180px;
-  /* top: 26%; */
   position: absolute;
   top: 20%;
   bottom: none;
@@ -621,4 +675,8 @@ path {
 
 .rectangle-height {
   height: 100px;
+}
+
+.temp-number-active {
+  display: block;
 }

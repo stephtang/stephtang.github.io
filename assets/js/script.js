@@ -123,11 +123,14 @@ $('#temp-container').waypoint(function() {
 
     } else if ($("#temp-button2").hasClass("button-active")){
       $("#temp-button2").removeClass("button-active");
+      $('#temp-number2').css('display', 'block');
+      $('#temp-number1').css('display', 'none');
 
     } else {
       $("#temp-button2").addClass("button-active");
       $("#thermometer-rectangle").css('height', '300px');
       $("#thermometer-rectangle").css('top', '15%');
+      $('#temp-number2').addClass('temp-number-active');
     }
 
   });
