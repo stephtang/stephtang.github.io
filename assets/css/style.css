@@ -52,41 +52,6 @@ path {
 
 /* #intro-container for page should fade in, timed transitions */
 
-#intro-container {
-  background-color: #2d343c;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  animation: fadein 10s forwards;
-  -webkit-animation: fadein 10s forwards;
-  -moz-animation: fadein 10s forwards;
-  -ms-animation: fadein 10s forwards;
-  animation-delay: .5s;
-  -webkit-animation-delay: .5s;
-  -moz-animation-delay: .5s;
-  -ms-animation-delay: .5s;
-  z-index: 1;
-}
-
-#intro-climate-container {
-  position: relative;
-  width: 960px;
-  height: 300px;
-  margin: 0 auto;
-  top: 50%;
-  transform: translateY(-150px);
-  -webkit-transform: translateY(-150px);
-  -moz-transform: translateY(-150px);
-  -ms-transform: translateY(-150px);
-  text-align: center;
-}
-
-#title-page-content {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-}
-
 .climate-title {
   color: #f0eef0;
   font-size: 30px;
@@ -113,42 +78,6 @@ path {
   text-align: center;
   font-family: "Majesti Banner";
   letter-spacing: 1.75px;
-}
-
-#statement1 {
-  opacity: 0;
-  animation: fadein 6.25s forwards;
-  -webkit-animation: fadein 6.25s forwards;
-  -moz-animation: fadein 6.25s forwards;
-  -ms-animation: fadein 6.25s forwards;
-  animation-delay: 2.75s;
-  -webkit-animation-delay: 2.75s;
-  -moz-animation-delay: 2.75s;
-  -ms-animation-delay: 2.75s;
-}
-
-#statement2 {
-  opacity: 0;
-  animation: fadein 4.5s forwards;
-  -webkit-animation: fadein 4.5s forwards;
-  -moz-animation: fadein 4.5s forwards;
-  -ms-animation: fadein 4.5s forwards;
-  animation-delay: 4.5s;
-  -webkit-animation-delay: 4.5s;
-  -moz-animation-delay: 4.5s;
-  -ms-animation-delay: 4.5s;
-}
-
-#statement3 {
-  opacity: 0;
-  animation: fadein 2.75s forwards;
-  -webkit-animation: fadein 2.75s forwards;
-  -moz-animation: fadein 2.75s forwards;
-  -ms-animation: fadein 2.75s forwards;
-  animation-delay: 6.25s;
-  -webkit-animation-delay: 6.25s;
-  -moz-animation-delay: 6.25s;
-  -ms-animation-delay: 6.25s;
 }
 
 /* The actual page starts here */
@@ -409,26 +338,6 @@ path {
   font-weight: 100;
 }
 
-#temp-number1 {
-
-}
-
-#temp-number2 {
-  display: none;
-}
-
-#temp-number3 {
-  display: none;
-}
-
-#temp-number4 {
-  display: none;
-}
-
-#temp-number5 {
-  display: none;
-}
-
 #blurb-temp {
   width: 299px;
   left: 50%;
@@ -447,9 +356,9 @@ path {
 
 #blurb-fossil {
   z-index: 5;
-  top: 69.2%;
+  top: 30%;
   left: 5%;
-  width: 660px;
+  width: 300px;
   background: #f0eef0;
 }
 
@@ -470,6 +379,7 @@ path {
   width: 375px;
   top: 38%;
   left: 20%;
+  display: none;
 }
 
 #cow-quote {
@@ -650,19 +560,66 @@ path {
 
 #citation-container {
   width: 100%;
-  background-color: #2d343c;
-  opacity: 0.5;
+  opacity: 0.2;
   z-index: 15;
   position: absolute;
-  padding: 10px;
   bottom: 0;
   display: none;
+  right: 5px;
+  margin: 5px 0px 5px 0px;
 }
 
 .creds {
   font-family: "Gotham";
   color: white;
+  font-size: 10px;
+  text-align: right;
 }
+
+/* transition lines */
+.transition-line {
+  width: 2px;
+  background-color: #7fb799;
+  display: none;
+  position: absolute;
+}
+
+#transition-line1 {
+  height: 61%;
+  left: 87%;
+  top: 73.35%;
+}
+
+#transition-line2 {
+  height: 35%;
+  left: 27%;
+  top: -10%;
+}
+
+#transition-line3 {
+  height: 47%;
+  left: 27%;
+  top: 63.35%;
+}
+
+#transition-line4 {
+  height: 30%;
+  left: 67%;
+  top: -10%;
+}
+
+#transition-line5 {
+  height: 46%;
+  left: 22%;
+  top: 64%;
+}
+
+#transition-line6 {
+  height: 20%;
+  left: 85%;
+  top: -10%;
+}
+
 
 /* jquery classes */
 .button-active {
@@ -671,12 +628,4 @@ path {
 
 .button-hover {
   background-color: #b4cba7;
-}
-
-.rectangle-height {
-  height: 100px;
-}
-
-.temp-number-active {
-  display: block;
 }

@@ -10,19 +10,63 @@ $(document).ready(function() {
 
 // problem container scroll //
 
-  $('#problem-container').waypoint(function() {
+  $('#problem-container1').waypoint(function() {
     $( "#problem-title:hidden:first" ).fadeIn(1500);
   }, {
     offset: '75%'
   });
 
+  $('#problem-container1').waypoint(function() {
+    $('#transition-line1').slideDown(2000);
+  }, {
+    offset: '10%'
+  });
+
+  $('#problem-container2').waypoint(function() {
+    $('#transition-line2').slideDown(2000);
+  }, {
+    offset: '60%'
+  });
+
+  $('#problem-container2').waypoint(function() {
+    $('#transition-line3').slideDown(2000);
+  }, {
+    offset: '10%'
+  });
+
+  $('#temp-container').waypoint(function() {
+    $('#transition-line4').slideDown(2000);
+  }, {
+    offset: '50%'
+  });
+
+
 // causes container scroll //
 
-  $('#causes-container').waypoint(function() {
+  $('#causes-container1').waypoint(function() {
     $( "#causes-title:hidden:first" ).fadeIn(1500);
   }, {
     offset: '75%'
   });
+
+  $('#causes-container1').waypoint(function() {
+    $('#transition-line5').slideDown(2000);
+  }, {
+    offset: '10%'
+  });
+
+  $('#causes-container2').waypoint(function() {
+    $('#transition-line6').slideDown(2000);
+  }, {
+    offset: '55%'
+  });
+
+  $('#causes-container2').waypoint(function() {
+    $( "#cow-quote-container:hidden:first" ).fadeIn(2000);
+  }, {
+    offset: '20%'
+  });
+
 
 // difference container scroll //
 
@@ -52,6 +96,13 @@ $('#last-section-container').waypoint(function() {
 
 $('#temp-container').waypoint(function() {
   $('#temp-button1').addClass('button-active');
+  $("#thermometer-rectangle").css('height', '350px');
+  $("#thermometer-rectangle").css('top', '8%');
+  $('#temp-button2').removeClass('button-active');
+  $('#temp-button3').removeClass('button-active');
+  $('#temp-button4').removeClass('button-active');
+  $('#temp-button5').removeClass('button-active');
+  $('div.temp-number').html('0.87 &deg;C');
 }, {
   offset: '100%'
 });
@@ -65,32 +116,39 @@ $('#temp-container').waypoint(function() {
       $('#temp-button1').addClass('button-active');
       $("#thermometer-rectangle").css('height', '350px');
       $("#thermometer-rectangle").css('top', '8%');
+      $('div.temp-number').html('0.87 &deg;C');
 
     } else if ($('#temp-button3').hasClass('button-active')) {
       $('#temp-button3').removeClass('button-active');
       $('#temp-button1').addClass('button-active');
       $("#thermometer-rectangle").css('height', '350px');
       $("#thermometer-rectangle").css('top', '8%');
+      $('div.temp-number').html('0.87 &deg;C');
 
     } else if ($('#temp-button4').hasClass('button-active')) {
       $('#temp-button4').removeClass('button-active');
       $('#temp-button1').addClass('button-active');
       $("#thermometer-rectangle").css('height', '350px');
       $("#thermometer-rectangle").css('top', '8%');
+      $('div.temp-number').html('0.87 &deg;C');
 
     } else if ($('#temp-button5').hasClass('button-active')) {
       $('#temp-button5').removeClass('button-active');
       $('#temp-button1').addClass('button-active');
       $("#thermometer-rectangle").css('height', '350px');
       $("#thermometer-rectangle").css('top', '8%');
+      $('div.temp-number').html('0.87 &deg;C');
 
     } else if ($("#temp-button1").hasClass("button-active")){
       $("#temp-button1").removeClass("button-active");
+      $('div.temp-number').html('0.87 &deg;C');
 
     } else {
       $("#temp-button1").addClass("button-active");
       $("#thermometer-rectangle").css('height', '350px');
       $("#thermometer-rectangle").css('top', '8%');
+      $('div.temp-number').html('0.87 &deg;C');
+
     }
 
   });
@@ -100,37 +158,42 @@ $('#temp-container').waypoint(function() {
     if ($('#temp-button1').hasClass('button-active')) {
       $('#temp-button1').removeClass('button-active');
       $('#temp-button2').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '300px');
-      $("#thermometer-rectangle").css('top', '15%');
+      $("#thermometer-rectangle").css('height', '175px');
+      $("#thermometer-rectangle").css('top', '37%');
+      $('div.temp-number').html('0.42 &deg;C');
 
     } else if ($('#temp-button3').hasClass('button-active')) {
       $('#temp-button3').removeClass('button-active');
       $('#temp-button2').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '300px');
-      $("#thermometer-rectangle").css('top', '15%');
+      $("#thermometer-rectangle").css('height', '175px');
+      $("#thermometer-rectangle").css('top', '37%');
+      $('div.temp-number').html('0.42 &deg;C');
 
     } else if ($('#temp-button4').hasClass('button-active')) {
       $('#temp-button4').removeClass('button-active');
       $('#temp-button2').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '300px');
-      $("#thermometer-rectangle").css('top', '15%');
+      $("#thermometer-rectangle").css('height', '175px');
+      $("#thermometer-rectangle").css('top', '37%');
+      $('div.temp-number').html('0.42 &deg;C');
 
     } else if ($('#temp-button5').hasClass('button-active')) {
       $('#temp-button5').removeClass('button-active');
       $('#temp-button2').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '300px');
-      $("#thermometer-rectangle").css('top', '15%');
+      $("#thermometer-rectangle").css('height', '175px');
+      $("#thermometer-rectangle").css('top', '37%');
+      $('div.temp-number').html('0.42 &deg;C');
 
     } else if ($("#temp-button2").hasClass("button-active")){
       $("#temp-button2").removeClass("button-active");
       $('#temp-number2').css('display', 'block');
       $('#temp-number1').css('display', 'none');
+      $('div.temp-number').html('0.42 &deg;C');
 
     } else {
       $("#temp-button2").addClass("button-active");
-      $("#thermometer-rectangle").css('height', '300px');
-      $("#thermometer-rectangle").css('top', '15%');
-      $('#temp-number2').addClass('temp-number-active');
+      $("#thermometer-rectangle").css('height', '175px');
+      $("#thermometer-rectangle").css('top', '37%');
+      $('div.temp-number').html('0.42 &deg;C');
     }
 
   });
@@ -140,34 +203,41 @@ $('#temp-container').waypoint(function() {
     if ($('#temp-button2').hasClass('button-active')) {
       $('#temp-button2').removeClass('button-active');
       $('#temp-button3').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '250px');
-      $("#thermometer-rectangle").css('top', '22%');
+      $("#thermometer-rectangle").css('height', '88px');
+      $("#thermometer-rectangle").css('top', '54%');
+      $('div.temp-number').html('0.28 &deg;C');
 
     } else if ($('#temp-button1').hasClass('button-active')) {
       $('#temp-button1').removeClass('button-active');
       $('#temp-button3').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '250px');
-      $("#thermometer-rectangle").css('top', '22%');
+      $("#thermometer-rectangle").css('height', '88px');
+      $("#thermometer-rectangle").css('top', '54%');
+      $('div.temp-number').html('0.28 &deg;C');
 
     } else if ($('#temp-button4').hasClass('button-active')) {
       $('#temp-button4').removeClass('button-active');
       $('#temp-button3').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '250px');
-      $("#thermometer-rectangle").css('top', '22%');
+      $("#thermometer-rectangle").css('height', '88px');
+      $("#thermometer-rectangle").css('top', '54%');
+      $('div.temp-number').html('0.28 &deg;C');
 
     } else if ($('#temp-button5').hasClass('button-active')) {
       $('#temp-button5').removeClass('button-active');
       $('#temp-button3').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '250px');
-      $("#thermometer-rectangle").css('top', '22%');
+      $("#thermometer-rectangle").css('height', '88px');
+      $("#thermometer-rectangle").css('top', '54%');
+      $('div.temp-number').html('0.28 &deg;C');
 
     } else if ($("#temp-button3").hasClass("button-active")){
       $("#temp-button3").removeClass("button-active");
+      $('div.temp-number').html('0.28 &deg;C');
 
     } else {
       $("#temp-button3").addClass("button-active");
-      $("#thermometer-rectangle").css('height', '250px');
-      $("#thermometer-rectangle").css('top', '22%');
+      $("#thermometer-rectangle").css('height', '88px');
+      $("#thermometer-rectangle").css('top', '54%');
+      $('div.temp-number').html('0.28 &deg;C');
+
     }
 
   });
@@ -177,34 +247,41 @@ $('#temp-container').waypoint(function() {
     if ($('#temp-button2').hasClass('button-active')) {
       $('#temp-button2').removeClass('button-active');
       $('#temp-button4').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '200px');
-      $("#thermometer-rectangle").css('top', '32%');
+      $("#thermometer-rectangle").css('height', '20px');
+      $("#thermometer-rectangle").css('top', '68%');
+      $('div.temp-number').html('-0.03 &deg;C');
 
     } else if ($('#temp-button1').hasClass('button-active')) {
       $('#temp-button1').removeClass('button-active');
       $('#temp-button4').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '200px');
-      $("#thermometer-rectangle").css('top', '32%');
+      $("#thermometer-rectangle").css('height', '20px');
+      $("#thermometer-rectangle").css('top', '68%');
+      $('div.temp-number').html('-0.03 &deg;C');
 
     } else if ($('#temp-button3').hasClass('button-active')) {
       $('#temp-button3').removeClass('button-active');
       $('#temp-button4').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '200px');
-      $("#thermometer-rectangle").css('top', '32%');
+      $("#thermometer-rectangle").css('height', '20px');
+      $("#thermometer-rectangle").css('top', '68%');
+      $('div.temp-number').html('-0.03 &deg;C');
 
     } else if ($('#temp-button5').hasClass('button-active')) {
       $('#temp-button5').removeClass('button-active');
       $('#temp-button4').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '200px');
-      $("#thermometer-rectangle").css('top', '32%');
+      $("#thermometer-rectangle").css('height', '20px');
+      $("#thermometer-rectangle").css('top', '68%');
+      $('div.temp-number').html('-0.03 &deg;C');
 
     } else if ($("#temp-button4").hasClass("button-active")){
       $("#temp-button4").removeClass("button-active");
+      $('div.temp-number').html('-0.03 &deg;C');
 
     } else {
       $("#temp-button4").addClass("button-active");
-      $("#thermometer-rectangle").css('height', '200px');
-      $("#thermometer-rectangle").css('top', '32%');
+      $("#thermometer-rectangle").css('height', '20px');
+      $("#thermometer-rectangle").css('top', '68%');
+      $('div.temp-number').html('-0.03 &deg;C');
+
     }
 
   });
@@ -214,34 +291,41 @@ $('#temp-container').waypoint(function() {
     if ($('#temp-button2').hasClass('button-active')) {
       $('#temp-button2').removeClass('button-active');
       $('#temp-button5').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '100px');
-      $("#thermometer-rectangle").css('top', '52%');
+      $("#thermometer-rectangle").css('height', '30px');
+      $("#thermometer-rectangle").css('top', '66%');
+      $('div.temp-number').html('0.09 &deg;C');
 
     } else if ($('#temp-button1').hasClass('button-active')) {
       $('#temp-button1').removeClass('button-active');
       $('#temp-button5').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '100px');
-      $("#thermometer-rectangle").css('top', '52%');
+      $("#thermometer-rectangle").css('height', '30px');
+      $("#thermometer-rectangle").css('top', '66%');
+      $('div.temp-number').html('0.09 &deg;C');
 
     } else if ($('#temp-button3').hasClass('button-active')) {
       $('#temp-button3').removeClass('button-active');
       $('#temp-button5').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '100px');
-      $("#thermometer-rectangle").css('top', '52%');
+      $("#thermometer-rectangle").css('height', '30px');
+      $("#thermometer-rectangle").css('top', '66%');
+      $('div.temp-number').html('0.09 &deg;C');
 
     } else if ($('#temp-button4').hasClass('button-active')) {
       $('#temp-button4').removeClass('button-active');
       $('#temp-button5').addClass('button-active');
-      $("#thermometer-rectangle").css('height', '100px');
-      $("#thermometer-rectangle").css('top', '52%');
+      $("#thermometer-rectangle").css('height', '30px');
+      $("#thermometer-rectangle").css('top', '66%');
+      $('div.temp-number').html('0.09 &deg;C');
 
     } else if ($("#temp-button5").hasClass("button-active")){
       $("#temp-button5").removeClass("button-active");
+      $('div.temp-number').html('0.09 &deg;C');
 
     } else {
       $("#temp-button5").addClass("button-active");
-      $("#thermometer-rectangle").css('height', '100px');
-      $("#thermometer-rectangle").css('top', '52%');
+      $("#thermometer-rectangle").css('height', '30px');
+      $("#thermometer-rectangle").css('top', '66%');
+      $('div.temp-number').html('0.09 &deg;C');
+
     }
 
   });
