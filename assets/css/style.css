@@ -183,7 +183,7 @@ path {
 
 .section-title {
   font-size: 80px;
-  font-family: "Gotham";
+  font-family: "Gotham", "Helvetica";
   font-weight: 800;
   margin: 0 auto;
   color: #2d343c;
@@ -424,6 +424,7 @@ path {
   width: 100%;
   text-align: center;
   top: 25%;
+  padding: 15px;
 }
 
 #action-container {
