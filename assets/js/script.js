@@ -338,8 +338,8 @@ $('#temp-container').waypoint(function() {
   });
 
   $("#action-box2").hover(function() {
-    $('#plate-image').css('display', 'none');
-    $('#plate-content').css('display', 'block');
+    $('#broccoli-image').css('display', 'none');
+    $('#broccoli-content').css('display', 'block');
   });
 
   $("#action-box3").hover(function() {
@@ -348,8 +348,8 @@ $('#temp-container').waypoint(function() {
   });
 
   $("#action-box4").hover(function() {
-    $('#speech-image').css('display', 'none');
-    $('#speech-content').css('display', 'block');
+    $('#loudspeaker-image').css('display', 'none');
+    $('#loudspeaker-content').css('display', 'block');
   });
 
 // scroll in "fight climate change" //
@@ -363,7 +363,7 @@ $('#last-section-container').waypoint(function() {
 $('#last-section-container').waypoint(function() {
   $( "#save-earth:hidden:first" ).fadeIn(3000);
 }, {
-  offset: '90%'
+  offset: '30%'
 });
 
 });

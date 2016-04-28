@@ -450,9 +450,11 @@ path {
 }
 
 .action-title {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-family: "Lora", sans-serif;
+  font-weight: 700;
   line-height: 30px;
+  font-style: italic;
+  font-size: 18px;
 }
 
 #recycle-image {
@@ -462,7 +464,7 @@ path {
   bottom: none;
 }
 
-#plate-image {
+#broccoli-image {
   width: 180px;
   position: absolute;
   top: 20%;
@@ -474,7 +476,7 @@ path {
   top: 20%;
 }
 
-#speech-image {
+#loudspeaker-image {
   width: 180px;
   position: absolute;
   top: 20%;
@@ -484,7 +486,7 @@ path {
   display: none;
 }
 
-#plate-content {
+#broccoli-content {
   display: none;
 }
 
@@ -492,7 +494,7 @@ path {
   display: none;
 }
 
-#speech-content {
+#loudspeaker-content {
   display: none;
 }
 
