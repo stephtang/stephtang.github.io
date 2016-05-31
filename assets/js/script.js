@@ -335,21 +335,33 @@ $('#temp-container').waypoint(function() {
   $("#action-box1").hover(function() {
     $('#recycle-image').css('display', 'none');
     $('#recycle-content').css('display', 'block');
+  }, function() {
+    $('#recycle-image').css('display', 'block');
+    $('#recycle-content').css('display','none');
   });
 
   $("#action-box2").hover(function() {
     $('#broccoli-image').css('display', 'none');
     $('#broccoli-content').css('display', 'block');
+  }, function() {
+    $('#broccoli-image').css('display', 'block');
+    $('#broccoli-content').css('display','none');
   });
 
   $("#action-box3").hover(function() {
     $('#wheel-image').css('display', 'none');
     $('#wheel-content').css('display', 'block');
+  }, function() {
+    $('#wheel-image').css('display', 'block');
+    $('#wheel-content').css('display','none');
   });
 
   $("#action-box4").hover(function() {
     $('#loudspeaker-image').css('display', 'none');
     $('#loudspeaker-content').css('display', 'block');
+  }, function() {
+    $('#loudspeaker-image').css('display', 'block');
+    $('#loudspeaker-content').css('display','none');
   });
 
 // scroll in "fight climate change" //
